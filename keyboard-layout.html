@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .main_title{
+            font-size: 35px;
+            font-weight: 900;
+            text-align: center;
+            color: rgba(127, 127, 50,1);
+            text-shadow: 4px 3px 0px rgba(0,0,0,0.15), 5px 4px 0px rgba(0,0,0,0.15);
+        }
+        
+        .KeyLayout{
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-color: grey;
+            width: 900px;
+            height: 450px;
+            padding: 15px;
+            border-radius: 5px;
+            text-align:  center;
+        }
+
+        .textbox{
+            width: 850px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            margin: 10px 0px 10px 0px;
+            font-size: 16px;
+            height: 100px;
+            resize: none;
+            padding: 5px;
+            overflow: visible;
+            font-family: 'times new roman',Arial, Helvetica, sans-serif;
+        }
+        .key{
+            width: 50px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            margin: 3px;
+            font-size: 16px;
+        }
+        ul{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        ul li{
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="KeyLayout">
+        
+        <div class="main_title">
+       <a>Keyboard Layout</a>
+       </div>
+            <textarea class="textbox" id="output"></textarea>
+            <br>
+            <input type="button" value="`" class="key keyInput" style="width: 30px;">
+            <input type="button" value="1" class="key keyInput">
+            <input type="button" value="2" class="key keyInput">
+            <input type="button" value="3" class="key keyInput">
+            <input type="button" value="4" class="key keyInput">
+            <input type="button" value="5" class="key keyInput">
+            <input type="button" value="6" class="key keyInput">
+            <input type="button" value="7" class="key keyInput">
+            <input type="button" value="8" class="key keyInput">
+            <input type="button" value="9" class="key keyInput">
+            <input type="button" value="0" class="key keyInput">
+            <input type="button" value="-" class="key keyInput">
+            <input type="button" value="=" class="key keyInput">
+            <input type="button" value="backspace" class="key keyBackSpace" id="backspace" style="width: 90px;">
+            <br>
+          <input type="button" value="tap" class="key keyTap" style="width: 60px;">
+            <input type="button" value="q" class="key keyInput">
+            <input type="button" value="w" class="key keyInput">
+            <input type="button" value="e" class="key keyInput">
+            <input type="button" value="r" class="key keyInput">
+            <input type="button" value="t" class="key keyInput">
+            <input type="button" value="y" class="key keyInput">
+            <input type="button" value="u" class="key keyInput">
+            <input type="button" value="i" class="key keyInput">
+            <input type="button" value="o" class="key keyInput">
+            <input type="button" value="p" class="key keyInput">
+            <input type="button" value="[" class="key keyInput">
+            <input type="button" value="]" class="key keyInput">
+            <input type="button" value="\" class="key keyInput" style="width: 60px;">
+      <br>
+            <input type="button" value="caps lock" class="key" id="keyCapsLock" style="width: 90px;">
+            <input type="button" value="a" class="key keyInput">
+            <input type="button" value="s" class="key keyInput">
+            <input type="button" value="d" class="key keyInput">
+            <input type="button" value="f" class="key keyInput">
+            <input type="button" value="g" class="key keyInput">
+            <input type="button" value="h" class="key keyInput">
+            <input type="button" value="j" class="key keyInput">
+            <input type="button" value="k" class="key keyInput">
+            <input type="button" value="l" class="key keyInput">
+            <input type="button" value=":" class="key keyInput">
+            <input type="button" value=" '' " class="key keyInput">
+            <input type="button" value="enter" class="key" id="keyEnter" style="width: 91px;">
+        <br>
+           <input type="button" value="shift" class="key keyShift keyLShift" style="width: 115px;">
+            <input type="button" value="z" class="key keyInput">
+            <input type="button" value="x" class="key keyInput">
+            <input type="button" value="c" class="key keyInput">
+            <input type="button" value="v" class="key keyInput">
+            <input type="button" value="b" class="key keyInput">
+            <input type="button" value="n" class="key keyInput">
+            <input type="button" value="m" class="key keyInput">
+            <input type="button" value="," class="key keyInput" id="keyComma">
+            <input type="button" value="." class="key keyInput" id="keyDot">
+            <input type="button" value="/" class="key keyQMark keyInput">
+            <input type="button" value="shift" class="key keyShift keyRShift" style="width: 127px;">
+        <br>
+        <div style="display: inline-flex;">
+               <input type="button" value="ctrl" class="key keyLCTRL" >
+            <input type="button" value="fn" class="key keyLFN" style="width: 45px;">
+            <input type="button" value="window" class="key keyLWIN" style="width: 70px;">
+            <input type="button" value="alt" class="key keyLALT" style="width: 40px;">
+            <input type="button" value=" " class="key keyInput keySpaceBar" style="width: 284px;">
+            <input type="button" value="alt" class="key keyRALT" style="width: 40px;">
+            <input type="button" value="window" class="key keyRWIN" style="width: 70px;">
+            <input type="button" value="ctrl" class="key keyRCTRL">
+            <button class="key keyLArrow"><span><i class="fa fa-angle-left"></i></span></button>
+            <ul>
+                <li style="margin-top: -2px;"><button style="height: 19px;" class="key arrow-up"><span><i class="fa fa-angle-up"></i></span></input></button></li>
+                <li style="margin-top: -7px;"><button style="height: 19px;" class="key arrow-down"><span><i class="fa fa-angle-down"></i></span></input></button></li>
+            </ul>
+            <button class="key keyRArrow"><span><i class="fa fa-angle-right"></i></span></input></button>
+          </div>
+    </div>
+        <script>
+
+            //global variable
+            var input = document.getElementsByClassName('keyInput');
+            var output = document.getElementById('output');
+            var keyShift = document.getElementsByClassName('keyShift');
+            var keyCapsLock = document.getElementById('keyCapsLock');
+            //var shiftClicked;
+            var shiftClicked = false;
+            var capsLock = false;
+
+            //
+
+            //backspace key
+            document.getElementById('backspace').addEventListener('click',function(){
+                output.value = output.value.substring(0, output.value.length - 1);
+                output.focus();
+            });
+
+
+            // keyInput
+            for(var i = 0; i<input.length; i++){
+                input[i].addEventListener('click', function(){
+                    if(capsLock == true){
+                        output.value += (this.value).toUpperCase();
+                    }
+                    else{
+                        if( shiftClicked == false){
+                            output.value += this.value;
+                        }else if(shiftClicked == true){
+                            output.value += (this.value).toUpperCase();
+                            shiftClicked=false;
+                        }
+                    }
+                    output.focus();
+                });
+            }
+
+            //capslock key
+            keyCapsLock.addEventListener('click',function(){
+                if(capsLock == false){
+                    capsLock = true;
+                }else{
+                    capsLock = false;
+                }
+                output.focus();
+                //alert(capsLock);
+            });
+
+            //shift key
+            for(var x = 0; x<keyShift.length;x++){
+                keyShift[x].addEventListener('click',function(){
+                    shiftClicked = true;
+                    //alert(shiftClicked);
+                    output.focus();
+                });
+            }
+            //enter key
+            document.getElementById('keyEnter').addEventListener('click',function(){
+                
+            });
+        </script>
+</body>
+</html>
